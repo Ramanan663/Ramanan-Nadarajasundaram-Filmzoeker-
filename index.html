@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Movies</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="moviesdata.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <header class="heading">
+            <h1>Welkom bij de Filmzoeker</h1>
+        </header>
+        <nav>
+            <input type="radio" id="newmovies" name="movie" value="newmovies" />
+            <label for="newmovies">Laatste Films, 2014 of nieuwer</label>
+            <input type="radio" id="avenger" name="movie" value="avenger" />
+            <label for="avenger">Avenger Films</label>
+            <input type="radio" id="xmen" name="movie" value="xmen" />
+            <label for="xmen"> X-Men Films</label>
+            <input type="radio" id="princess" name="movie" value="princess" />
+            <label for="princess">Princess Films</label>
+            <input type="radio" id="batman" name="movie" value="batman" />
+            <label for="batman">Batman Films</label>
+            <form id="search-box">
+                <input type="text" id="search" name="search" value="search" />
+            </form>
+        </nav>
+        <main>
+            <ul id="card-selection"></ul>
+        </main>
+    </div>
+</body>
+
+</html>
